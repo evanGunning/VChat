@@ -1,9 +1,16 @@
 import './App.css';
 import SignIn from "./SignIn";
+import {  BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <SignIn />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/">
+          <SignIn />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
