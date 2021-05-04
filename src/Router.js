@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import SignIn from './Register_Login/SignIn'
-import UserLanding from './UserLanding'
+import Landing from './Landing'
 import Register from './Register_Login/Register'
 
 function Router() {
@@ -11,7 +11,7 @@ function Router() {
           <SignIn />
         </Route>
         <Route path="/userlanding">
-          <UserLanding />
+          <Landing />
         </Route>
         <Route path="/register">
           <Register />
